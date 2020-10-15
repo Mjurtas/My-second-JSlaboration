@@ -35,4 +35,70 @@ const news = [
  * Good luck :) 
  */
 
- console.log('js loaded!')
+ // EX O1
+document.getElementById("ex01").innerHTML = "Doooone!"
+console.log("testar!")
+//Ex02
+
+var elements = document.getElementsByClassName("ex02");
+elements[0].className += " red";
+
+//Ex03
+
+document.querySelector("blockquote").innerHTML = "Nytt citaAt";
+
+// EX04 -
+var ul = document.getElementById("shopping-list")
+var li = document.createElement("li")
+li.appendChild(document.createTextNode("Milk"))
+ul.appendChild(li)
+
+//EX05
+
+var div = document.getElementById("news")
+
+for (let i = 0; i < news.length; i++) {
+
+    const arttemplate = `<div class="article">
+ 
+ <h1>${news[i].headline}</h1>
+
+ <h5>${news[i].author}</h5>
+ <a href="${news[i].href}">Read More</a>
+<p>${news[i].summary}</p>
+</div>` 
+    var art = document.createElement("div")
+    div.innerHTML += arttemplate
+}
+
+ //EX06
+
+    let nmbr = 0;
+     var triggerhere = document.querySelector("main")
+     triggerhere.onclick = () => {
+        nmbr += 1;
+        document.getElementById("click-counter").innerHTML = nmbr
+    }
+
+    //EX07
+
+    var button = document.querySelector("button")
+    button.onclick = () => {button.disabled = true}
+
+    //EX08
+    document.getElementById("link-to-svt").addEventListener("click", function(event){
+        event.preventDefault()
+      });
+
+
+//EX09
+
+document.querySelector("img").src = "https://images.unsplash.com/photo-1578124034087-0be02fb7c0c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
+
+
+
+
+
+    
+
+

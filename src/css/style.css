@@ -1,3 +1,32 @@
 .red {
-    color: red
+    color: red;
+}
+
+h1 {
+    color: green;
+}
+
+.link {
+    
+}
+
+a {
+  color: blue;
+    
+}
+
+.summary {
+    color: black
+}
+
+h5 {
+    color: black;
+}
+
+.article {
+  background: lightgrey;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  font-family: Arial;
 }
